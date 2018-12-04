@@ -9,12 +9,27 @@
 		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 		<!-- Page CSS -->
 		<link rel="stylesheet" href="dist/css/style.min.css">
-
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="@fortawesome/fontawesome-free/css/all.min.css">	
 		<title>Deco Blog</title>
 	</head>
 	<body>
-
-
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand " href="#">DecoBlog</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"><a href="" class="nav-link">Home</a></li>
+						<li class="nav-item"><a href="" class="nav-link">About</a></li>
+						<li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+						<li class="nav-item"><a href="" class="nav-link"><i class="fas fa-sign-in-alt"></i></a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
 
 		<!-- JavaScript -->
 		<!-- jQuery -->
@@ -22,6 +37,16 @@
 		 <!-- Bootstrap JS -->
 		<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 		<!-- Page JS -->
-		<script src="dist/js/app.min.css"></script>
+		<script src="dist/js/app.min.js"></script>
+		<!-- Font Awesome -->
+		<script src="@fortawesome/fontawesome-free/js/all.min.js"></script>
 	</body>
 </html>
+
+
+<!--
+upaliti watcher - gleda promjene i koji task treba okinuti
+node_modules/.bin/gulp watch
+
+<img src="img/sl1.jpeg" alt="slika"/>
+-->
