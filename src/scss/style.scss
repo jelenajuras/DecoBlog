@@ -1,0 +1,54 @@
+/* ########## MAIN STYLES ###########*/
+@import 'base/variables.scss';
+@import 'base/mixins.scss';
+
+*, *:before, *:after {
+	box-sizing: $box-sizing;
+	margin:0;
+}
+
+html {
+	font-family: $arial;
+	font-size: 16px;
+}
+
+body {
+	margin:0;
+	background-color: $light;
+
+	.content {
+		width:800px;
+		margin:auto;
+		text-align:center;
+		padding: $padding *2;
+	}
+	
+	.btn {
+		margin: 20px;
+		padding: 5px 10px;
+		border-radius: 5px;
+		cursor:pointer;
+	}
+	.btn:hover {
+		background-color:#ccc;
+	}
+	table {
+		width:100%;
+		margin-top:$margin;
+		border-collapse:collapse;
+	}
+	
+	th,td {
+		border:1px solid $dark;
+		padding:10px;
+		font-size: 0.875rem;
+	}
+	
+	td {
+		text-align:left;
+	}
+	preloader {
+		margin-top: $margin;
+		color: $red;
+	}
+}	
