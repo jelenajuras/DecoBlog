@@ -10,43 +10,90 @@
 		<!-- Page CSS -->
 		<link rel="stylesheet" href="dist/css/style.min.css">
 		<!-- Font Awesome -->
-		<link rel="stylesheet" href="@fortawesome/fontawesome-free/css/all.min.css">	
+		<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">	
+		
 		<title>Deco Blog</title>
 	</head>
 	<body>
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-				<a class="navbar-brand " href="#">DecoBlog</a>
+				<a class="navbar-brand " href="">DecoBlog</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active"><a href="" class="nav-link">Home</a></li>
-						<li class="nav-item"><a href="" class="nav-link">About</a></li>
-						<li class="nav-item"><a href="" class="nav-link">Contact</a></li>
-						<li class="nav-item"><a href="" class="nav-link"><i class="fas fa-sign-in-alt"></i></a></li>
+						<li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+						<li class="nav-item"><a href="#LoginModal" class="nav-link" title="Login" data-toggle="modal" ><i class="fas fa-sign-in-alt"></i> Login</a></li>
 					</ul>
 				</div>
 			</nav>
 		</div>
-
+		
 		<!-- JavaScript -->
 		<!-- jQuery -->
 		<script src="node_modules/jquery/dist/jquery.min.js"></script>
 		 <!-- Bootstrap JS -->
 		<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+		<!-- Font Awesome (radi i bez skripte)-->
+		<script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+		<!-- Parsley JS -->
+		<script src="node_modules/parsleyjs/dist/parsley.min.js"></script>
 		<!-- Page JS -->
 		<script src="dist/js/app.min.js"></script>
-		<!-- Font Awesome -->
-		<script src="@fortawesome/fontawesome-free/js/all.min.js"></script>
+		<!-- Modal -->
+		
+		<script>
+            $(document).ready(function() {
+                App.init();
+            });
+        </script>
 	</body>
 </html>
 
+<!-- Modal -->
+	<form id="loginForm" novalidate >
+		<div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="exampleModalCenterTitle">User login</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				  <div class="form-group">
+					<label for="email">Email address</label>
+					<input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required />
+				  </div>
+				  <div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" class="form-control" name="password" id="password" placeholder="Enter your password" required />
+				  </div>
+				  <div class="form-group form-check">
+					<input type="checkbox" class="form-check-input" name="remember" id="remember"/>
+					<label for="remember"  class="form-check-label">Remember me</label>
+				  </div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="submit" class="btn btn-plavi">Login</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</form>
+	
 
+
+	
 <!--
 upaliti watcher - gleda promjene i koji task treba okinuti
 node_modules/.bin/gulp watch
 
 <img src="img/sl1.jpeg" alt="slika"/>
+http://parsleyjs.org/ - validator
+https://useiconic.com/open
 -->
