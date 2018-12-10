@@ -39,3 +39,31 @@ body {
 	border-radius: 5px;
 }
 
+.navbar{
+	padding-left:0;
+	padding-right:0;
+	.navbar-nav {
+		.nav-item {
+			&:last-child {
+				.nav-link {
+					padding-right:0 !important;
+				}
+			}
+		}
+	}
+}
+
+.jumbotron {
+	background: url("../../img/sl1.jpeg") no-repeat ; 
+	background-size:cover;
+	min-height:350px;
+	p, h1 {
+		text-shadow: 2px 2px  $dark;
+		color:$light !important;
+	}
+	a {
+		
+	}
+	
+}
+
