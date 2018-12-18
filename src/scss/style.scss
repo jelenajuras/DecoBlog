@@ -12,6 +12,11 @@ body {
 	width:100%;
 }
 
+.body_about{
+	background: linear-gradient(to bottom, $light 0%,$light 100%);
+	
+}
+
 .navbar.bg-dark {
 	background-color:$dark !important;
 }
